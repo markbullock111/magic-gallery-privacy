@@ -1,0 +1,21 @@
+:root { --bg:#0f1014; --fg:#f2f2f5; --muted:#a0a1ad; --card:#181a20; --accent:#8f6bf5; --accent2:#33c9ff; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font-family:-apple-system,"SF Pro Text",Helvetica,Arial,sans-serif; line-height:1.6; }
+a { color:var(--accent2); text-decoration:none; } a:hover { text-decoration:underline; }
+.wrap { max-width:960px; margin:0 auto; padding:32px 24px 64px; }
+nav { display:flex; align-items:center; gap:18px; padding:14px 0; border-bottom:1px solid #23252d; margin-bottom:32px; }
+nav img { width:36px; height:36px; border-radius:9px; } nav .brand { font-weight:700; font-size:18px; margin-right:auto; } nav a { color:var(--muted); font-size:14px; } nav a:hover { color:var(--fg); }
+.hero { display:grid; grid-template-columns:1.1fr 1fr; gap:32px; align-items:center; margin:24px 0 48px; }
+.hero h1 { font-size:44px; line-height:1.1; margin:0 0 12px; letter-spacing:-.02em; background:linear-gradient(90deg,#fff,#c9b8ff); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.hero p { color:var(--muted); font-size:18px; }
+.hero img { width:100%; border-radius:14px; box-shadow:0 20px 60px rgba(0,0,0,.5); border:1px solid #2a2c35; }
+.btn { display:inline-block; background:var(--accent); color:#fff; padding:12px 20px; border-radius:12px; font-weight:600; margin:8px 8px 0 0; } .btn.secondary { background:#23252d; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin:24px 0; }
+.card { background:var(--card); border:1px solid #23252d; border-radius:14px; padding:18px; } .card h3 { margin:0 0 6px; font-size:16px; } .card p { margin:0; color:var(--muted); font-size:14px; }
+.shots { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; } .shots img { width:100%; border-radius:10px; border:1px solid #2a2c35; }
+h2 { margin-top:48px; font-size:26px; } h3 { font-size:18px; }
+.price { background:var(--card); border:1px solid #2a2c35; border-radius:16px; padding:24px; display:flex; gap:32px; flex-wrap:wrap; align-items:center; } .price b { font-size:36px; }
+footer { margin-top:64px; color:var(--muted); font-size:13px; border-top:1px solid #23252d; padding-top:18px; }
+.doc h2 { font-size:22px; margin-top:32px; } .doc p, .doc li { color:#d8d9e0; }
+table { border-collapse:collapse; width:100%; } td, th { border:1px solid #2a2c35; padding:8px 10px; text-align:left; font-size:14px; }
+@media (max-width:760px) { .hero { grid-template-columns:1fr; } .hero h1 { font-size:34px; } }
